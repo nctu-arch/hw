@@ -1,0 +1,12 @@
+@FSDB rc file Version 1.0
+[VRTL_FILE_HEADER]
+# !! DON'T EDIT [VRTL_FILE_HEADER] SESSION !!
+Version = 1
+[VRTL_FILE_SOURCE]
+FileType = switch
+File1 = debussy_000.fsdb
+File2 = debussy_001.fsdb
+File3 = debussy_002.fsdb
+File4 = debussy_003.fsdb
+File5 = debussy_004.fsdb
+File6 = debussy_005.fsdb

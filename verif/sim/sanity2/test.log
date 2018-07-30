@@ -1,0 +1,314 @@
+Command: /home/bcwang/nvdla/nvdla_bak/hw_20171120/verif/sim/sanity2/./simv -l test.log +read_reg_poll_retries=100000 +continue_on_fail +continue_on_fail +dump_fsdb +fsdb+dump_log=off +fsdbfile+/home/bcwang/nvdla/nvdla_bak/hw_20171120/verif/sim/sanity2/debussy.fsdb +input_file=/home/bcwang/nvdla/nvdla_bak/hw_20171120/verif/sim/sanity2/input.txn +input_dir=/home/bcwang/nvdla/nvdla_bak/hw_20171120/verif/sim/sanity2
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version M-2017.03-SP2_Full64; Runtime version M-2017.03-SP2_Full64;  Nov 24 15:16 2017
+VCD+ Writer M-2017.03-SP2_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+(1) NVDLA_IP_INFO : Turning on fsdb dump to file debussy.fsdb
+*Verdi* Loading libsscore_vcs201703.so
+*Verdi* : Disable novas_dump.log.
+FSDB Dumper for VCS, Release Verdi_M-2017.03-SP2, Linux x86_64/64bit, 08/20/2017
+(C) 1996 - 2017 by Synopsys, Inc.
+*Verdi* FSDB: The switch FSDB file size might not match the input size (1000MB) because of performance concerns.
+*Verdi* FSDB: To have the FSDB file size match the input size (1000MB), set the FSDB_ENV_PRECISE_AUTOSWITCH environment, though the dumping performance might decrease.
+*Verdi* : Enable automatic switching of the FSDB file.
+*Verdi* : (Filename='debussy', Limit Size=1000MB, File Amount=20).
+*Verdi* : Create FSDB file 'debussy_000.fsdb'
+*Verdi* : Create the file 'debussy.log' to log the time range of each FSDB file.
+*Verdi* : Create virtual FSDB file 'debussy.vf' to log each FSDB file.
+*Verdi* : Begin traversing the scope (top), layer (0).
+*Verdi* WARNING: Var 'memory' will be ignored because its total element is larger than or equal to 2097152.
+*Verdi* : End of traversing.
+(2) NVDLA_IP_INFO : fsdb dumping enabled. debussy.fsdb
+10570.00ns MSEQ: Backdoor mem_load of file                           0.raw2 at address 0x80000000 for length 0x00001000.
+
+Warning-[STASKW_RMTMDWIFAL] Too many data words in file
+/home/bcwang/nvdla/hw/verif/synth_tb/csb_master_seq.v, 419
+  Too many data words in file 0.raw2 at line 1026 while executing $readmem.
+  Please ensure that the file has proper entries.
+
+10650.00ns MSEQ: write_cmd address 0xffff100b with data 0x00000800 (command 4294967293)
+11450.00ns MSEQ: Write (command 4294967293) completed (addr: 0xffff100b, data: 0x00000800.
+11530.00ns MSEQ: read_cmd address 0xffff100b with data 0x00000800 and mask 0xffffffe0 (command 4294967294)
+12330.00ns MSEQ: Read (command 4294967294) matched (addr: 0xffff100b, received data: 0x00000800, expected data: 0x00000800.
+12410.00ns MSEQ: write_cmd address 0xffff1008 with data 0x00000100 (command 4294967295)
+13210.00ns MSEQ: Write (command 4294967295) completed (addr: 0xffff1008, data: 0x00000100.
+13290.00ns MSEQ: read_cmd address 0xffff1008 with data 0x00000100 and mask 0xffffffe0 (command 0)
+14090.00ns MSEQ: Read (command 0) matched (addr: 0xffff1008, received data: 0x00000100, expected data: 0x00000100.
+14170.00ns MSEQ: write_cmd address 0xffff100a with data 0x00000800 (command 1)
+14970.00ns MSEQ: Write (command 1) completed (addr: 0xffff100a, data: 0x00000800.
+15050.00ns MSEQ: read_cmd address 0xffff100a with data 0x00000800 and mask 0xffffffe0 (command 2)
+15850.00ns MSEQ: Read (command 2) matched (addr: 0xffff100a, received data: 0x00000800, expected data: 0x00000800.
+15930.00ns MSEQ: write_cmd address 0xffff1007 with data 0x00000100 (command 3)
+16730.00ns MSEQ: Write (command 3) completed (addr: 0xffff1007, data: 0x00000100.
+16810.00ns MSEQ: read_cmd address 0xffff1007 with data 0x00000100 and mask 0xffffffe0 (command 4)
+17610.00ns MSEQ: Read (command 4) matched (addr: 0xffff1007, received data: 0x00000100, expected data: 0x00000100.
+17690.00ns MSEQ: write_cmd address 0xffff1009 with data 0x00000000 (command 5)
+18490.00ns MSEQ: Write (command 5) completed (addr: 0xffff1009, data: 0x00000000.
+18570.00ns MSEQ: read_cmd address 0xffff1009 with data 0x00000000 and mask 0x00ffffff (command 6)
+19370.00ns MSEQ: Read (command 6) matched (addr: 0xffff1009, received data: 0x00000000, expected data: 0x00000000.
+19450.00ns MSEQ: write_cmd address 0xffff1006 with data 0x00000007 (command 7)
+20250.00ns MSEQ: Write (command 7) completed (addr: 0xffff1006, data: 0x00000007.
+20330.00ns MSEQ: read_cmd address 0xffff1006 with data 0x00000007 and mask 0x00ffffff (command 8)
+21130.00ns MSEQ: Read (command 8) matched (addr: 0xffff1006, received data: 0x00000007, expected data: 0x00000007.
+21210.00ns MSEQ: write_cmd address 0xffff1004 with data 0x00000007 (command 9)
+22010.00ns MSEQ: Write (command 9) completed (addr: 0xffff1004, data: 0x00000007.
+22090.00ns MSEQ: read_cmd address 0xffff1004 with data 0x00000007 and mask 0x00001fff (command 10)
+22890.00ns MSEQ: Read (command 10) matched (addr: 0xffff1004, received data: 0x00000007, expected data: 0x00000007.
+22970.00ns MSEQ: write_cmd address 0xffff1005 with data 0x00000003 (command 11)
+23770.00ns MSEQ: Write (command 11) completed (addr: 0xffff1005, data: 0x00000003.
+23850.00ns MSEQ: read_cmd address 0xffff1005 with data 0x00000003 and mask 0x00000003 (command 12)
+24650.00ns MSEQ: Read (command 12) matched (addr: 0xffff1005, received data: 0x00000003, expected data: 0x00000003.
+24730.00ns MSEQ: write_cmd address 0xffff1001 with data 0x00000000 (command 13)
+25530.00ns MSEQ: Write (command 13) completed (addr: 0xffff1001, data: 0x00000000.
+25610.00ns MSEQ: read_cmd address 0xffff1001 with data 0x00000000 and mask 0x000000ff (command 14)
+26410.00ns MSEQ: Read (command 14) matched (addr: 0xffff1001, received data: 0x00000000, expected data: 0x00000000.
+26490.00ns MSEQ: write_cmd address 0xffff1000 with data 0x80000000 (command 15)
+27290.00ns MSEQ: Write (command 15) completed (addr: 0xffff1000, data: 0x80000000.
+27370.00ns MSEQ: read_cmd address 0xffff1000 with data 0x80000000 and mask 0xffffffe0 (command 16)
+28170.00ns MSEQ: Read (command 16) matched (addr: 0xffff1000, received data: 0x80000000, expected data: 0x80000000.
+28250.00ns MSEQ: write_cmd address 0xffff1003 with data 0x00000000 (command 17)
+29050.00ns MSEQ: Write (command 17) completed (addr: 0xffff1003, data: 0x00000000.
+29130.00ns MSEQ: read_cmd address 0xffff1003 with data 0x00000000 and mask 0x000000ff (command 18)
+29930.00ns MSEQ: Read (command 18) matched (addr: 0xffff1003, received data: 0x00000000, expected data: 0x00000000.
+30010.00ns MSEQ: write_cmd address 0xffff1002 with data 0x81000000 (command 19)
+30810.00ns MSEQ: Write (command 19) completed (addr: 0xffff1002, data: 0x81000000.
+30890.00ns MSEQ: read_cmd address 0xffff1002 with data 0x81000000 and mask 0xffffffe0 (command 20)
+31690.00ns MSEQ: Read (command 20) matched (addr: 0xffff1002, received data: 0x81000000, expected data: 0x81000000.
+31770.00ns MSEQ: write_cmd address 0xffff100c with data 0x00000001 (command 21)
+32570.00ns MSEQ: Write (command 21) completed (addr: 0xffff100c, data: 0x00000001.
+32650.00ns MSEQ: read_cmd address 0xffff100c with data 0x00000001 and mask 0x00000001 (command 22)
+33450.00ns MSEQ: Read (command 22) matched (addr: 0xffff100c, received data: 0x00000001, expected data: 0x00000001.
+33530.00ns MSEQ: write_cmd address 0xffff100d with data 0x00000001 (command 23)
+34330.00ns MSEQ: Write (command 23) completed (addr: 0xffff100d, data: 0x00000001.
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=34390.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000000 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+34410.00ns MSEQ: read_cmd address 0xffff100d with data 0x00000001 and mask 0x00000001 (command 24)
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=34470.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000040 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=34550.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000080 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+34550.00ns SMEM: Received slave 0 read addr 0x0080000000 len  0 size 6, temp_mem_addr 0x0020000000
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=34630.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x00800000c0 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+34630.00ns SMEM: Received slave 0 read addr 0x0080000040 len  0 size 6, temp_mem_addr 0x0020000010
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=34710.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000100 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+34710.00ns SMEM: Received slave 0 read addr 0x0080000080 len  0 size 6, temp_mem_addr 0x0020000020
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=34790.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000140 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+34790.00ns SMEM: Received slave 0 read addr 0x00800000c0 len  0 size 6, temp_mem_addr 0x0020000030
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=34870.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000180 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+34870.00ns SMEM: Received slave 0 read addr 0x0080000100 len  0 size 6, temp_mem_addr 0x0020000040
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=34950.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x00800001c0 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+34950.00ns SMEM: Received slave 0 read addr 0x0080000140 len  0 size 6, temp_mem_addr 0x0020000050
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=35030.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000200 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+35030.00ns SMEM: Received slave 0 read addr 0x0080000180 len  0 size 6, temp_mem_addr 0x0020000060
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=35110.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000240 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+35110.00ns SMEM: Received slave 0 read addr 0x00800001c0 len  0 size 6, temp_mem_addr 0x0020000070
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=35190.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000280 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+35190.00ns SMEM: Received slave 0 read addr 0x0080000200 len  0 size 6, temp_mem_addr 0x0020000080
+35210.00ns MSEQ: Read (command 24) matched (addr: 0xffff100d, received data: 0x00000001, expected data: 0x00000001.
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=35270.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x00800002c0 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+35270.00ns SMEM: Received slave 0 read addr 0x0080000240 len  0 size 6, temp_mem_addr 0x0020000090
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=35350.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000300 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+35350.00ns SMEM: Received slave 0 read addr 0x0080000280 len  0 size 6, temp_mem_addr 0x00200000a0
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=35430.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000340 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+35430.00ns SMEM: Received slave 0 read addr 0x00800002c0 len  0 size 6, temp_mem_addr 0x00200000b0
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=35510.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000380 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+35510.00ns SMEM: Received slave 0 read addr 0x0080000300 len  0 size 6, temp_mem_addr 0x00200000c0
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=35590.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x00800003c0 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+35590.00ns SMEM: Received slave 0 read addr 0x0080000340 len  0 size 6, temp_mem_addr 0x00200000d0
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=35670.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000400 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+35670.00ns SMEM: Received slave 0 read addr 0x0080000380 len  0 size 6, temp_mem_addr 0x00200000e0
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=35750.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000440 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+35750.00ns SMEM: Received slave 0 read addr 0x00800003c0 len  0 size 6, temp_mem_addr 0x00200000f0
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=35830.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000480 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+35830.00ns SMEM: Received slave 0 read addr 0x0080000400 len  0 size 6, temp_mem_addr 0x0020000100
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=35910.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x00800004c0 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+35910.00ns SMEM: Received slave 0 read addr 0x0080000440 len  0 size 6, temp_mem_addr 0x0020000110
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=35990.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000500 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+35990.00ns SMEM: Received slave 0 read addr 0x0080000480 len  0 size 6, temp_mem_addr 0x0020000120
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=36070.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000540 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+36070.00ns SMEM: Received slave 0 read addr 0x00800004c0 len  0 size 6, temp_mem_addr 0x0020000130
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=36150.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000580 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+36150.00ns SMEM: Received slave 0 read addr 0x0080000500 len  0 size 6, temp_mem_addr 0x0020000140
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=36230.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x00800005c0 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+36230.00ns SMEM: Received slave 0 read addr 0x0080000540 len  0 size 6, temp_mem_addr 0x0020000150
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=36310.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000600 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+36310.00ns SMEM: Received slave 0 read addr 0x0080000580 len  0 size 6, temp_mem_addr 0x0020000160
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=36390.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000640 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+36390.00ns SMEM: Received slave 0 read addr 0x00800005c0 len  0 size 6, temp_mem_addr 0x0020000170
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=36470.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000680 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+36470.00ns SMEM: Received slave 0 read addr 0x0080000600 len  0 size 6, temp_mem_addr 0x0020000180
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=36550.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x00800006c0 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+36550.00ns SMEM: Received slave 0 read addr 0x0080000640 len  0 size 6, temp_mem_addr 0x0020000190
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=36630.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000700 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+36630.00ns SMEM: Received slave 0 read addr 0x0080000680 len  0 size 6, temp_mem_addr 0x00200001a0
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=36710.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000740 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+36710.00ns SMEM: Received slave 0 read addr 0x00800006c0 len  0 size 6, temp_mem_addr 0x00200001b0
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=36790.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x0080000780 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+36790.00ns SMEM: Received slave 0 read addr 0x0080000700 len  0 size 6, temp_mem_addr 0x00200001c0
+AXI_MEM_XACTION: ReadReq: CHANNEL=0 TIME=36870.00ns ARID=0x00, ARLEN=0x0, ARSIZE=0x6 ARADDR=0x00800007c0 ARBURST=0x1 ARLOCK=0x0 ARCACHE=0x0 ARPORT=0x0
+36870.00ns SMEM: Received slave 0 read addr 0x0080000740 len  0 size 6, temp_mem_addr 0x00200001d0
+36950.00ns SMEM: Received slave 0 read addr 0x0080000780 len  0 size 6, temp_mem_addr 0x00200001e0
+37030.00ns SMEM: Received slave 0 read addr 0x00800007c0 len  0 size 6, temp_mem_addr 0x00200001f0
+41430.00ns SMEM: Slave 0 read address 0x0080000000 (mem address 0x0000000000000000) data 0x9a22731893d6f37da3931b185091a9fbfc8b5e18afac426ce0e3ed59ee419242dbee6ddf0ad196c693ba1db87b4e02c8e55c48591a93d056c49d819dcdd2e4ce
+41510.00ns SMEM: Slave 0 read address 0x0080000040 (mem address 0x0000000000000010) data 0x30729274037e1757a9c7c5983107c02253ecabb5b65366ff23a7516e3378b678c68c68baf6122e1eb1c5a3071eda9f7a9b2b7649906b71f256a52a442e34366b
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=41550.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+41590.00ns SMEM: Slave 0 read address 0x0080000080 (mem address 0x0000000000000020) data 0xe0fc50c4c270fde459ad06e550714052f365fdaf4abef04d71bdd15cecf0cbd95efc69137953bdc0ee176c4c1c74ec30fe3a1f322c677728a9c2114fff6dbfb4
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=41630.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+41670.00ns SMEM: Slave 0 read address 0x00800000c0 (mem address 0x0000000000000030) data 0x849c39f48f62540fad2beeb1e76a0764aafe87f4414b0456479c904e48caf305dc06d55e743d75916f0b85c597818bd175c129cf9c7fc9483e39db0a20b9983e
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=41710.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+41750.00ns SMEM: Slave 0 read address 0x0080000100 (mem address 0x0000000000000040) data 0x56cccb7f7286103410476f032231eedfd8f95d3cdf822bb74c753597f5f2ee6fb803feebd71ce51c309f51e1085848b0c2c1f70ffbf3017a871712017b0ba575
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=41790.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+41830.00ns SMEM: Slave 0 read address 0x0080000140 (mem address 0x0000000000000050) data 0xfc9d7807fda925a9633cd0c33e9955c0d58372f43195b8966ad722cefba4ebce3aac643eca1afd27cc43bed9802d5a880d9a52a5ac6f8dff255aa04e3507c50f
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=41870.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+41910.00ns SMEM: Slave 0 read address 0x0080000180 (mem address 0x0000000000000060) data 0xf978c8dfe70893fefb2bb1553e2c978535228ec325a21b24658aa71bc94687313e7535e3567b325388eccd0976595ac1e21ce3564a24f086bf918cf854014275
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=41950.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+41990.00ns SMEM: Slave 0 read address 0x00800001c0 (mem address 0x0000000000000070) data 0x5676973cb19d84d72105487245db1f6ec4ec10176bcf48f8be608cfae8317e2dcdfdb1f07f4868044e4feb30daccfe7c480c3861d3e6c39e7234b0020e5e4dc1
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=42030.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+42070.00ns SMEM: Slave 0 read address 0x0080000200 (mem address 0x0000000000000080) data 0x6babb56f4a4885ddd2b56201ed43266e027495c437e29effa92f1d21036847ced3a5b157da06c25f0d34f8ebc459e24e718a18287a3b43916741375d5a2e8ac7
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=42110.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+42150.00ns SMEM: Slave 0 read address 0x0080000240 (mem address 0x0000000000000090) data 0x4c98209c935434f81c97bd728bc1cd7194f9c481b365a132c1a5ddbf27913dcd4cfdd3b38fec6a0b5e8156bad4379c78fc512b0ccb0bf2a5eae9146d206c932a
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=42190.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+42230.00ns SMEM: Slave 0 read address 0x0080000280 (mem address 0x00000000000000a0) data 0x1385d79f549f9a5eb128f8cf47e5ca67ebcba7e18620287e933dbb3118effecf0e21a16b09f5f5dade6ba5e3fadc305aec0fd4e1c6d18bc1fe0db47df94f4dfc
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=42270.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+42310.00ns SMEM: Slave 0 read address 0x00800002c0 (mem address 0x00000000000000b0) data 0xc57a0440f2ad3cabf3719f4f48c1cfc1caaf44709a8fb992178a56de64f4c763e73a6b37331e985d54c8e2424617df9823085a71f7e11efa16d389612e28a066
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=42350.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+42390.00ns SMEM: Slave 0 read address 0x0080000300 (mem address 0x00000000000000c0) data 0x29122e4fd4c1a1874de83d1734a2fafc76e10af86ddf52a4736e1a56e14e2dfbb4f9003b288b3d29af23bcadc42ed8d180cfc70ac1d583e7e7ac4221dfc43b36
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=42430.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+42470.00ns SMEM: Slave 0 read address 0x0080000340 (mem address 0x00000000000000d0) data 0xf614756cdaa641613001d42631abb509104776abbab3108deef66c6ec420d2964237a2e0348cd763c2b42bceb4fdeee51ee191947e67e963500f2685c7cdf7c5
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=42510.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+42550.00ns SMEM: Slave 0 read address 0x0080000380 (mem address 0x00000000000000e0) data 0x9874ffc3ca4f65d000de4026dc0f814068a3bd0be738ad4df3271c52b71c6b3753d44d3ae879265b1cf5a8043855829543a741ca9f759e9d46e5ba976fa45686
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=42590.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+42590.00ns SMEM: Received slave 0 write addr 0x0081000000 mask 0xffffffffffffffff data 0x9a22731893d6f37da3931b185091a9fbfc8b5e18afac426ce0e3ed59ee419242dbee6ddf0ad196c693ba1db87b4e02c8e55c48591a93d056c49d819dcdd2e4ce
+42630.00ns SMEM: Slave 0 read address 0x00800003c0 (mem address 0x00000000000000f0) data 0x5acd75aa2d45fc92212faba9bb79db6c089abff50529d6e4fe4db6d0c25577d7ab2eab464787400da280199d66a21d165759d4b1a20a447bac40c14fb7f6ea2d
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=42670.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+42710.00ns SMEM: Received slave 0 write addr 0x0081000040 mask 0xffffffffffffffff data 0x30729274037e1757a9c7c5983107c02253ecabb5b65366ff23a7516e3378b678c68c68baf6122e1eb1c5a3071eda9f7a9b2b7649906b71f256a52a442e34366b
+42710.00ns SMEM: Slave 0 read address 0x0080000400 (mem address 0x0000000000000100) data 0xc71e2eac7ae47637745675569c70578e6f056548c8313678d40294c953f82737da65e867280b626d0b068d947ebc759e3e26ae8a6e6aa9847eb87a8c733423cf
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=42750.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+42790.00ns SMEM: Slave 0 read address 0x0080000440 (mem address 0x0000000000000110) data 0x840bf0893a1b9a685e89315c152bf3020bc321f5aeb91c6473575a8114e0328097de059d36df9845daff10370b53461716aa954c176ba183a063d74ba94ad083
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=42830.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+42830.00ns SMEM: Received slave 0 write addr 0x0081000080 mask 0xffffffffffffffff data 0xe0fc50c4c270fde459ad06e550714052f365fdaf4abef04d71bdd15cecf0cbd95efc69137953bdc0ee176c4c1c74ec30fe3a1f322c677728a9c2114fff6dbfb4
+42870.00ns SMEM: Slave 0 read address 0x0080000480 (mem address 0x0000000000000120) data 0x60006309cf31dda35b3e6967641e8ca49dcbca7223141e1d17f23131eb4b3396e0a6f983127b8ef17cfbed438f46d605d7a526a1e1cab03ef7dd3b7a0f37a775
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=42910.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+42950.00ns SMEM: Received slave 0 write addr 0x00810000c0 mask 0xffffffffffffffff data 0x849c39f48f62540fad2beeb1e76a0764aafe87f4414b0456479c904e48caf305dc06d55e743d75916f0b85c597818bd175c129cf9c7fc9483e39db0a20b9983e
+42950.00ns SMEM: Slave 0 read address 0x00800004c0 (mem address 0x0000000000000130) data 0x5c4d69c6cc849dc1a0dfe0c92ce9462d2918bd4756e577a8cf939a9258123ba711821ddc0c0567a72528cb950d9cff09d850c03c3452cdfecbf9c9d41ae54735
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=42990.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+43030.00ns SMEM: Slave 0 read address 0x0080000500 (mem address 0x0000000000000140) data 0xbd9f0fda85ffd943ca896b588740e06e41b0e060861a685c866e4bc27ec95e9645dffe1e5ad0f886c0c89448be080fe814750637f84ff9359910b5750d5ab0a4
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=43070.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+43070.00ns SMEM: Received slave 0 write addr 0x0081000100 mask 0xffffffffffffffff data 0x56cccb7f7286103410476f032231eedfd8f95d3cdf822bb74c753597f5f2ee6fb803feebd71ce51c309f51e1085848b0c2c1f70ffbf3017a871712017b0ba575
+43110.00ns SMEM: Slave 0 read address 0x0080000540 (mem address 0x0000000000000150) data 0xfc9738a4904e4ff399eafe5529811107a84f11a86a99f10e915ae492d989b143b92e3137a8d9e53597f935fe05e0848f05508ad53adefee1114fe90417316ad4
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=43150.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+43190.00ns SMEM: Received slave 0 write addr 0x0081000140 mask 0xffffffffffffffff data 0xfc9d7807fda925a9633cd0c33e9955c0d58372f43195b8966ad722cefba4ebce3aac643eca1afd27cc43bed9802d5a880d9a52a5ac6f8dff255aa04e3507c50f
+43190.00ns SMEM: Slave 0 read address 0x0080000580 (mem address 0x0000000000000160) data 0xc227e76bdb73f2fdd714069b37cef49c6bb454b4b74b93cce45be1d5c1c945d17600ac44bfa1e6c7ec2195b8c2deddea196b30be750ddbc267a679b4531aa698
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=43230.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+43270.00ns SMEM: Slave 0 read address 0x00800005c0 (mem address 0x0000000000000170) data 0x306d06b8ffb6c1b2499ff1253a3efeb4cda5b6c858756cf521a080966075f35f86e592aa1f050bbc52761d0b9f668927e41d52aa8456851a68bfa33352b2709d
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=43310.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+43310.00ns SMEM: Received slave 0 write addr 0x0081000180 mask 0xffffffffffffffff data 0xf978c8dfe70893fefb2bb1553e2c978535228ec325a21b24658aa71bc94687313e7535e3567b325388eccd0976595ac1e21ce3564a24f086bf918cf854014275
+43350.00ns SMEM: Slave 0 read address 0x0080000600 (mem address 0x0000000000000180) data 0x739496c930a91204267af6a519d6240d0317cab340aaafb024dd9dca04c57bb0d173c88a8c16ed4160067773b097b94c0098aabf16565c9df4365d241837283e
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=43390.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+43430.00ns SMEM: Slave wrote address 0x0081000000 data 0x9a22731893d6f37da3931b185091a9fbfc8b5e18afac426ce0e3ed59ee419242dbee6ddf0ad196c693ba1db87b4e02c8e55c48591a93d056c49d819dcdd2e4ce
+43430.00ns SMEM: Received slave 0 write addr 0x00810001c0 mask 0xffffffffffffffff data 0x5676973cb19d84d72105487245db1f6ec4ec10176bcf48f8be608cfae8317e2dcdfdb1f07f4868044e4feb30daccfe7c480c3861d3e6c39e7234b0020e5e4dc1
+43430.00ns SMEM: Slave 0 read address 0x0080000640 (mem address 0x0000000000000190) data 0x070855504c96e0e166b96d4a427d38c5eff6f61daf1419873d49f227696486603661866f2fedc7bb6bac04166dbd8749a79e0d7eacb537421950df3d2e7e8f26
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=43470.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+43510.00ns SMEM: Slave 0 read address 0x0080000680 (mem address 0x00000000000001a0) data 0x26f9c30fb489a5df99f8d9941d3c180255d0ea92aab9e52420c74511880ca27eab8cb99bc2dee2c00283024d8d26d9226a3069c5fc0b535a73c01db08d445c9f
+43550.00ns SMEM: Slave wrote address 0x0081000040 data 0x30729274037e1757a9c7c5983107c02253ecabb5b65366ff23a7516e3378b678c68c68baf6122e1eb1c5a3071eda9f7a9b2b7649906b71f256a52a442e34366b
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=43550.00ns LATENCY=1120.00ns BID=0x00
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=43550.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+43550.00ns SMEM: Received slave 0 write addr 0x0081000200 mask 0xffffffffffffffff data 0x6babb56f4a4885ddd2b56201ed43266e027495c437e29effa92f1d21036847ced3a5b157da06c25f0d34f8ebc459e24e718a18287a3b43916741375d5a2e8ac7
+43590.00ns SMEM: Slave 0 read address 0x00800006c0 (mem address 0x00000000000001b0) data 0x99087828b01d8d9e1989b815d01d68c2161dcf5e18887dbabdf2186598f4e4cb41ca11cc87d361d48570165edac5b09f36ca3783a817b1c85d1706889f5230fe
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=43630.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+43670.00ns SMEM: Slave wrote address 0x0081000080 data 0xe0fc50c4c270fde459ad06e550714052f365fdaf4abef04d71bdd15cecf0cbd95efc69137953bdc0ee176c4c1c74ec30fe3a1f322c677728a9c2114fff6dbfb4
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=43670.00ns LATENCY=1200.00ns BID=0x00
+43670.00ns SMEM: Received slave 0 write addr 0x0081000240 mask 0xffffffffffffffff data 0x4c98209c935434f81c97bd728bc1cd7194f9c481b365a132c1a5ddbf27913dcd4cfdd3b38fec6a0b5e8156bad4379c78fc512b0ccb0bf2a5eae9146d206c932a
+43670.00ns SMEM: Slave 0 read address 0x0080000700 (mem address 0x00000000000001c0) data 0x45702fb252f906dbc5b7f0eda0cbd23cdc13d9d412f354ab6a4785c2de71ceff2e7c68660550959e809ba174463c9cc897449832d6df8e110544493d46126df0
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=43710.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+43750.00ns SMEM: Slave 0 read address 0x0080000740 (mem address 0x00000000000001d0) data 0xeb888aed1917830cb1e0af79209f9593be853d94e25b90290020064c73db6b74f676707cf2f59e931dd64b638afa00ce3ba2789a248e3be7e621518f1db19677
+43790.00ns SMEM: Slave wrote address 0x00810000c0 data 0x849c39f48f62540fad2beeb1e76a0764aafe87f4414b0456479c904e48caf305dc06d55e743d75916f0b85c597818bd175c129cf9c7fc9483e39db0a20b9983e
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=43790.00ns LATENCY=1280.00ns BID=0x00
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=43790.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+43790.00ns SMEM: Received slave 0 write addr 0x0081000280 mask 0xffffffffffffffff data 0x1385d79f549f9a5eb128f8cf47e5ca67ebcba7e18620287e933dbb3118effecf0e21a16b09f5f5dade6ba5e3fadc305aec0fd4e1c6d18bc1fe0db47df94f4dfc
+43830.00ns SMEM: Slave 0 read address 0x0080000780 (mem address 0x00000000000001e0) data 0x96262ade71f56645dccf74d659bb99a2a432969838b199c6a77ba550b9bd53442b871c0ddf8c8ecadb759ac1e25217b018b374de410b9a92ea1a2294f7cf7432
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=43870.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+43910.00ns SMEM: Slave wrote address 0x0081000100 data 0x56cccb7f7286103410476f032231eedfd8f95d3cdf822bb74c753597f5f2ee6fb803feebd71ce51c309f51e1085848b0c2c1f70ffbf3017a871712017b0ba575
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=43910.00ns LATENCY=1360.00ns BID=0x00
+43910.00ns SMEM: Received slave 0 write addr 0x00810002c0 mask 0xffffffffffffffff data 0xc57a0440f2ad3cabf3719f4f48c1cfc1caaf44709a8fb992178a56de64f4c763e73a6b37331e985d54c8e2424617df9823085a71f7e11efa16d389612e28a066
+43910.00ns SMEM: Slave 0 read address 0x00800007c0 (mem address 0x00000000000001f0) data 0x18062762bf6b02da97b143dd085e302ae0e391f0c624be97bc55e361a10234e18fb6ad2ff3b35d228a49c966d0c68e97cf8cdb812560f3ef483b6ffcab4c1239
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=43950.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+44030.00ns SMEM: Slave wrote address 0x0081000140 data 0xfc9d7807fda925a9633cd0c33e9955c0d58372f43195b8966ad722cefba4ebce3aac643eca1afd27cc43bed9802d5a880d9a52a5ac6f8dff255aa04e3507c50f
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=44030.00ns LATENCY=1280.00ns BID=0x00
+AXI_MEM_XACTION: ReadResp: CHANNEL=0 START_TIME=0 END_TIME=44030.00ns RID=0x00 RDATA=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LATENCY=0 LEN=x
+44030.00ns SMEM: Received slave 0 write addr 0x0081000300 mask 0xffffffffffffffff data 0x29122e4fd4c1a1874de83d1734a2fafc76e10af86ddf52a4736e1a56e14e2dfbb4f9003b288b3d29af23bcadc42ed8d180cfc70ac1d583e7e7ac4221dfc43b36
+44150.00ns SMEM: Slave wrote address 0x0081000180 data 0xf978c8dfe70893fefb2bb1553e2c978535228ec325a21b24658aa71bc94687313e7535e3567b325388eccd0976595ac1e21ce3564a24f086bf918cf854014275
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=44150.00ns LATENCY=1360.00ns BID=0x00
+44150.00ns SMEM: Received slave 0 write addr 0x0081000340 mask 0xffffffffffffffff data 0xf614756cdaa641613001d42631abb509104776abbab3108deef66c6ec420d2964237a2e0348cd763c2b42bceb4fdeee51ee191947e67e963500f2685c7cdf7c5
+44270.00ns SMEM: Slave wrote address 0x00810001c0 data 0x5676973cb19d84d72105487245db1f6ec4ec10176bcf48f8be608cfae8317e2dcdfdb1f07f4868044e4feb30daccfe7c480c3861d3e6c39e7234b0020e5e4dc1
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=44270.00ns LATENCY=1440.00ns BID=0x00
+44270.00ns SMEM: Received slave 0 write addr 0x0081000380 mask 0xffffffffffffffff data 0x9874ffc3ca4f65d000de4026dc0f814068a3bd0be738ad4df3271c52b71c6b3753d44d3ae879265b1cf5a8043855829543a741ca9f759e9d46e5ba976fa45686
+44390.00ns SMEM: Slave wrote address 0x0081000200 data 0x6babb56f4a4885ddd2b56201ed43266e027495c437e29effa92f1d21036847ced3a5b157da06c25f0d34f8ebc459e24e718a18287a3b43916741375d5a2e8ac7
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=44390.00ns LATENCY=1520.00ns BID=0x00
+44390.00ns SMEM: Received slave 0 write addr 0x00810003c0 mask 0xffffffffffffffff data 0x5acd75aa2d45fc92212faba9bb79db6c089abff50529d6e4fe4db6d0c25577d7ab2eab464787400da280199d66a21d165759d4b1a20a447bac40c14fb7f6ea2d
+44510.00ns SMEM: Slave wrote address 0x0081000240 data 0x4c98209c935434f81c97bd728bc1cd7194f9c481b365a132c1a5ddbf27913dcd4cfdd3b38fec6a0b5e8156bad4379c78fc512b0ccb0bf2a5eae9146d206c932a
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=44510.00ns LATENCY=1440.00ns BID=0x00
+44510.00ns SMEM: Received slave 0 write addr 0x0081000400 mask 0xffffffffffffffff data 0xc71e2eac7ae47637745675569c70578e6f056548c8313678d40294c953f82737da65e867280b626d0b068d947ebc759e3e26ae8a6e6aa9847eb87a8c733423cf
+44630.00ns SMEM: Slave wrote address 0x0081000280 data 0x1385d79f549f9a5eb128f8cf47e5ca67ebcba7e18620287e933dbb3118effecf0e21a16b09f5f5dade6ba5e3fadc305aec0fd4e1c6d18bc1fe0db47df94f4dfc
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=44630.00ns LATENCY=1520.00ns BID=0x00
+44630.00ns SMEM: Received slave 0 write addr 0x0081000440 mask 0xffffffffffffffff data 0x840bf0893a1b9a685e89315c152bf3020bc321f5aeb91c6473575a8114e0328097de059d36df9845daff10370b53461716aa954c176ba183a063d74ba94ad083
+44750.00ns SMEM: Slave wrote address 0x00810002c0 data 0xc57a0440f2ad3cabf3719f4f48c1cfc1caaf44709a8fb992178a56de64f4c763e73a6b37331e985d54c8e2424617df9823085a71f7e11efa16d389612e28a066
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=44750.00ns LATENCY=1600.00ns BID=0x00
+44750.00ns SMEM: Received slave 0 write addr 0x0081000480 mask 0xffffffffffffffff data 0x60006309cf31dda35b3e6967641e8ca49dcbca7223141e1d17f23131eb4b3396e0a6f983127b8ef17cfbed438f46d605d7a526a1e1cab03ef7dd3b7a0f37a775
+44870.00ns SMEM: Slave wrote address 0x0081000300 data 0x29122e4fd4c1a1874de83d1734a2fafc76e10af86ddf52a4736e1a56e14e2dfbb4f9003b288b3d29af23bcadc42ed8d180cfc70ac1d583e7e7ac4221dfc43b36
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=44870.00ns LATENCY=1680.00ns BID=0x00
+44870.00ns SMEM: Received slave 0 write addr 0x00810004c0 mask 0xffffffffffffffff data 0x5c4d69c6cc849dc1a0dfe0c92ce9462d2918bd4756e577a8cf939a9258123ba711821ddc0c0567a72528cb950d9cff09d850c03c3452cdfecbf9c9d41ae54735
+44990.00ns SMEM: Slave wrote address 0x0081000340 data 0xf614756cdaa641613001d42631abb509104776abbab3108deef66c6ec420d2964237a2e0348cd763c2b42bceb4fdeee51ee191947e67e963500f2685c7cdf7c5
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=44990.00ns LATENCY=1600.00ns BID=0x00
+44990.00ns SMEM: Received slave 0 write addr 0x0081000500 mask 0xffffffffffffffff data 0xbd9f0fda85ffd943ca896b588740e06e41b0e060861a685c866e4bc27ec95e9645dffe1e5ad0f886c0c89448be080fe814750637f84ff9359910b5750d5ab0a4
+45110.00ns SMEM: Slave wrote address 0x0081000380 data 0x9874ffc3ca4f65d000de4026dc0f814068a3bd0be738ad4df3271c52b71c6b3753d44d3ae879265b1cf5a8043855829543a741ca9f759e9d46e5ba976fa45686
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=45110.00ns LATENCY=1680.00ns BID=0x00
+45110.00ns SMEM: Received slave 0 write addr 0x0081000540 mask 0xffffffffffffffff data 0xfc9738a4904e4ff399eafe5529811107a84f11a86a99f10e915ae492d989b143b92e3137a8d9e53597f935fe05e0848f05508ad53adefee1114fe90417316ad4
+45230.00ns SMEM: Slave wrote address 0x00810003c0 data 0x5acd75aa2d45fc92212faba9bb79db6c089abff50529d6e4fe4db6d0c25577d7ab2eab464787400da280199d66a21d165759d4b1a20a447bac40c14fb7f6ea2d
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=45230.00ns LATENCY=1760.00ns BID=0x00
+45230.00ns SMEM: Received slave 0 write addr 0x0081000580 mask 0xffffffffffffffff data 0xc227e76bdb73f2fdd714069b37cef49c6bb454b4b74b93cce45be1d5c1c945d17600ac44bfa1e6c7ec2195b8c2deddea196b30be750ddbc267a679b4531aa698
+45350.00ns SMEM: Slave wrote address 0x0081000400 data 0xc71e2eac7ae47637745675569c70578e6f056548c8313678d40294c953f82737da65e867280b626d0b068d947ebc759e3e26ae8a6e6aa9847eb87a8c733423cf
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=45350.00ns LATENCY=1840.00ns BID=0x00
+45350.00ns SMEM: Received slave 0 write addr 0x00810005c0 mask 0xffffffffffffffff data 0x306d06b8ffb6c1b2499ff1253a3efeb4cda5b6c858756cf521a080966075f35f86e592aa1f050bbc52761d0b9f668927e41d52aa8456851a68bfa33352b2709d
+45470.00ns SMEM: Slave wrote address 0x0081000440 data 0x840bf0893a1b9a685e89315c152bf3020bc321f5aeb91c6473575a8114e0328097de059d36df9845daff10370b53461716aa954c176ba183a063d74ba94ad083
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=45470.00ns LATENCY=1760.00ns BID=0x00
+45470.00ns SMEM: Received slave 0 write addr 0x0081000600 mask 0xffffffffffffffff data 0x739496c930a91204267af6a519d6240d0317cab340aaafb024dd9dca04c57bb0d173c88a8c16ed4160067773b097b94c0098aabf16565c9df4365d241837283e
+45590.00ns SMEM: Slave wrote address 0x0081000480 data 0x60006309cf31dda35b3e6967641e8ca49dcbca7223141e1d17f23131eb4b3396e0a6f983127b8ef17cfbed438f46d605d7a526a1e1cab03ef7dd3b7a0f37a775
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=45590.00ns LATENCY=1840.00ns BID=0x00
+45590.00ns SMEM: Received slave 0 write addr 0x0081000640 mask 0xffffffffffffffff data 0x070855504c96e0e166b96d4a427d38c5eff6f61daf1419873d49f227696486603661866f2fedc7bb6bac04166dbd8749a79e0d7eacb537421950df3d2e7e8f26
+45710.00ns SMEM: Slave wrote address 0x00810004c0 data 0x5c4d69c6cc849dc1a0dfe0c92ce9462d2918bd4756e577a8cf939a9258123ba711821ddc0c0567a72528cb950d9cff09d850c03c3452cdfecbf9c9d41ae54735
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=45710.00ns LATENCY=1920.00ns BID=0x00
+45710.00ns SMEM: Received slave 0 write addr 0x0081000680 mask 0xffffffffffffffff data 0x26f9c30fb489a5df99f8d9941d3c180255d0ea92aab9e52420c74511880ca27eab8cb99bc2dee2c00283024d8d26d9226a3069c5fc0b535a73c01db08d445c9f
+45830.00ns SMEM: Slave wrote address 0x0081000500 data 0xbd9f0fda85ffd943ca896b588740e06e41b0e060861a685c866e4bc27ec95e9645dffe1e5ad0f886c0c89448be080fe814750637f84ff9359910b5750d5ab0a4
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=45830.00ns LATENCY=2000.00ns BID=0x00
+45830.00ns SMEM: Received slave 0 write addr 0x00810006c0 mask 0xffffffffffffffff data 0x99087828b01d8d9e1989b815d01d68c2161dcf5e18887dbabdf2186598f4e4cb41ca11cc87d361d48570165edac5b09f36ca3783a817b1c85d1706889f5230fe
+45950.00ns SMEM: Slave wrote address 0x0081000540 data 0xfc9738a4904e4ff399eafe5529811107a84f11a86a99f10e915ae492d989b143b92e3137a8d9e53597f935fe05e0848f05508ad53adefee1114fe90417316ad4
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=45950.00ns LATENCY=1920.00ns BID=0x00
+45950.00ns SMEM: Received slave 0 write addr 0x0081000700 mask 0xffffffffffffffff data 0x45702fb252f906dbc5b7f0eda0cbd23cdc13d9d412f354ab6a4785c2de71ceff2e7c68660550959e809ba174463c9cc897449832d6df8e110544493d46126df0
+46070.00ns SMEM: Slave wrote address 0x0081000580 data 0xc227e76bdb73f2fdd714069b37cef49c6bb454b4b74b93cce45be1d5c1c945d17600ac44bfa1e6c7ec2195b8c2deddea196b30be750ddbc267a679b4531aa698
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=46070.00ns LATENCY=2000.00ns BID=0x00
+46070.00ns SMEM: Received slave 0 write addr 0x0081000740 mask 0xffffffffffffffff data 0xeb888aed1917830cb1e0af79209f9593be853d94e25b90290020064c73db6b74f676707cf2f59e931dd64b638afa00ce3ba2789a248e3be7e621518f1db19677
+46190.00ns SMEM: Slave wrote address 0x00810005c0 data 0x306d06b8ffb6c1b2499ff1253a3efeb4cda5b6c858756cf521a080966075f35f86e592aa1f050bbc52761d0b9f668927e41d52aa8456851a68bfa33352b2709d
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=46190.00ns LATENCY=2080.00ns BID=0x00
+46190.00ns SMEM: Received slave 0 write addr 0x0081000780 mask 0xffffffffffffffff data 0x96262ade71f56645dccf74d659bb99a2a432969838b199c6a77ba550b9bd53442b871c0ddf8c8ecadb759ac1e25217b018b374de410b9a92ea1a2294f7cf7432
+46310.00ns SMEM: Slave wrote address 0x0081000600 data 0x739496c930a91204267af6a519d6240d0317cab340aaafb024dd9dca04c57bb0d173c88a8c16ed4160067773b097b94c0098aabf16565c9df4365d241837283e
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=46310.00ns LATENCY=2160.00ns BID=0x00
+46310.00ns SMEM: Received slave 0 write addr 0x00810007c0 mask 0xffffffffffffffff data 0x18062762bf6b02da97b143dd085e302ae0e391f0c624be97bc55e361a10234e18fb6ad2ff3b35d228a49c966d0c68e97cf8cdb812560f3ef483b6ffcab4c1239
+46430.00ns SMEM: Slave wrote address 0x0081000640 data 0x070855504c96e0e166b96d4a427d38c5eff6f61daf1419873d49f227696486603661866f2fedc7bb6bac04166dbd8749a79e0d7eacb537421950df3d2e7e8f26
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=46430.00ns LATENCY=2080.00ns BID=0x00
+46550.00ns SMEM: Slave wrote address 0x0081000680 data 0x26f9c30fb489a5df99f8d9941d3c180255d0ea92aab9e52420c74511880ca27eab8cb99bc2dee2c00283024d8d26d9226a3069c5fc0b535a73c01db08d445c9f
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=46550.00ns LATENCY=2160.00ns BID=0x00
+46670.00ns SMEM: Slave wrote address 0x00810006c0 data 0x99087828b01d8d9e1989b815d01d68c2161dcf5e18887dbabdf2186598f4e4cb41ca11cc87d361d48570165edac5b09f36ca3783a817b1c85d1706889f5230fe
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=46670.00ns LATENCY=2240.00ns BID=0x00
+46790.00ns SMEM: Slave wrote address 0x0081000700 data 0x45702fb252f906dbc5b7f0eda0cbd23cdc13d9d412f354ab6a4785c2de71ceff2e7c68660550959e809ba174463c9cc897449832d6df8e110544493d46126df0
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=46790.00ns LATENCY=2320.00ns BID=0x00
+46910.00ns SMEM: Slave wrote address 0x0081000740 data 0xeb888aed1917830cb1e0af79209f9593be853d94e25b90290020064c73db6b74f676707cf2f59e931dd64b638afa00ce3ba2789a248e3be7e621518f1db19677
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=46910.00ns LATENCY=2240.00ns BID=0x00
+47030.00ns SMEM: Slave wrote address 0x0081000780 data 0x96262ade71f56645dccf74d659bb99a2a432969838b199c6a77ba550b9bd53442b871c0ddf8c8ecadb759ac1e25217b018b374de410b9a92ea1a2294f7cf7432
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=47030.00ns LATENCY=2320.00ns BID=0x00
+47150.00ns SMEM: Slave wrote address 0x00810007c0 data 0x18062762bf6b02da97b143dd085e302ae0e391f0c624be97bc55e361a10234e18fb6ad2ff3b35d228a49c966d0c68e97cf8cdb812560f3ef483b6ffcab4c1239
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=47150.00ns LATENCY=2400.00ns BID=0x00
+AXI_MEM_XACTION: WriteResp: CHANNEL=0 TIME=47270.00ns LATENCY=2480.00ns BID=0x00
+$finish called from file "/home/bcwang/nvdla/hw/verif/synth_tb/csb_master_seq.v", line 274.
+$finish at simulation time      48310.00ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 48310000 ps
+CPU Time:     14.270 seconds;       Data structure size: 429.7Mb
+Fri Nov 24 15:16:31 2017

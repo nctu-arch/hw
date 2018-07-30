@@ -1,0 +1,34 @@
+Command: /home/bcwang/nvdla/hw/verif/sim/sanity0/./simv -l test.log +read_reg_poll_retries=10 +continue_on_fail +continue_on_fail +dump_fsdb +fsdb+dump_log=off +fsdbfile+/home/bcwang/nvdla/hw/verif/sim/sanity0/debussy.fsdb +input_file=/home/bcwang/nvdla/hw/verif/sim/sanity0/input.txn +input_dir=/home/bcwang/nvdla/hw/verif/sim/sanity0
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version M-2017.03-SP2_Full64; Runtime version M-2017.03-SP2_Full64;  Nov 16 20:16 2017
+VCD+ Writer M-2017.03-SP2_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+(1) NVDLA_IP_INFO : Turning on fsdb dump to file debussy.fsdb
+*Verdi* Loading libsscore_vcs201703.so
+*Verdi* : Disable novas_dump.log.
+FSDB Dumper for VCS, Release Verdi_M-2017.03-SP2, Linux x86_64/64bit, 08/20/2017
+(C) 1996 - 2017 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* FSDB: The switch FSDB file size might not match the input size (1000MB) because of performance concerns.
+*Verdi* FSDB: To have the FSDB file size match the input size (1000MB), set the FSDB_ENV_PRECISE_AUTOSWITCH environment, though the dumping performance might decrease.
+*Verdi* : Enable automatic switching of the FSDB file.
+*Verdi* : (Filename='debussy', Limit Size=1000MB, File Amount=20).
+*Verdi* : Create FSDB file 'debussy_000.fsdb'
+*Verdi* : Create the file 'debussy.log' to log the time range of each FSDB file.
+*Verdi* : Create virtual FSDB file 'debussy.vf' to log each FSDB file.
+*Verdi* : Begin traversing the scope (top), layer (0).
+*Verdi* WARNING: Var 'memory' will be ignored because its total element is larger than or equal to 2097152.
+*Verdi* : End of traversing.
+(2) NVDLA_IP_INFO : fsdb dumping enabled. debussy.fsdb
+10570.00ns MSEQ: read_cmd address 0xffff100b with data 0x00000000 and mask 0xffffffe0 (command 4294967292)
+11370.00ns MSEQ: Read (command 4294967292) matched (addr: 0xffff100b, received data: 0x00000000, expected data: 0x00000000.
+11450.00ns MSEQ: write_cmd address 0xffff100b with data 0xf0a5a500 (command 4294967293)
+12250.00ns MSEQ: Write (command 4294967293) completed (addr: 0xffff100b, data: 0xf0a5a500.
+12330.00ns MSEQ: read_cmd address 0xffff100b with data 0xf0a5a500 and mask 0xffffffe0 (command 4294967294)
+13130.00ns MSEQ: Read (command 4294967294) matched (addr: 0xffff100b, received data: 0xf0a5a500, expected data: 0xf0a5a500.
+$finish called from file "/home/bcwang/nvdla/hw/verif/synth_tb/csb_master_seq.v", line 274.
+$finish at simulation time      13670.00ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 13670000 ps
+CPU Time:     13.570 seconds;       Data structure size: 429.7Mb
+Thu Nov 16 20:16:55 2017
